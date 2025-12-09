@@ -1,13 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Desenvolvedor de Sistemas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Laureane Oliveira</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Olá, GitHub!</h1>
-    <p>Eu estou aprendendo a versionar o meu código!</p>
+
+<!-- Scroll Top Button -->
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+<!-- Header -->
+<header class="header">
+  <div class="profile-img">
+    <img src="WhatsApp Image 2025-12-09 at 15.59.53.jpeg" alt="Foto do Perfil">
+  </div>
+  <div class="logo">
+    <h1>Laureane Oliveira</h1>
+  </div>
+  <nav class="navmenu">
+    <ul>
+      <li><a href="#hero" class="active"><i class="fas fa-home navicon"></i>Home</a></li>
+      <li><a href="#about"><i class="fas fa-user navicon"></i>Sobre</a></li>
+      <li><a href="#portfolio"><i class="fas fa-briefcase navicon"></i>Portfólio</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope navicon"></i>Contato</a></li>
+    </ul>
+  </nav>
+  <div class="header-toggle"><i class="fas fa-bars"></i></div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Eu me chamo <span>Laureane da Silva Oliveira</span></h2>
+      <p>Estudante de Desenvolvimento de Sistemas</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/7lahxz" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:laureanesilva188@gmai.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5511962942775" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Sobre Mim</h2>
+        <p>Conheça um pouco sobre minha trajetória</p>
+      </div>
+      <div class="content">
+        <p>
+          Meu nome é Laureane, sou estudante de Desenvolvimento de Sistemas, sempre buscando aprender e evoluir na área de tecnologia. 
+          Procuro minha primeira oportunidade profissional para aplicar meus conhecimentos, ganhar experiência e contribuir com projetos reais enquanto continuo meu desenvolvimento.
+        </p>
+        <ul>
+          <li><i class="fas fa-check"></i> <strong>Idade:</strong> 16 anos</li>
+          <li><i class="fas fa-check"></i> <strong>Curso:</strong> Técnico em Desenvolvimento de Sistemas</li>
+          <li><i class="fas fa-check"></i> <strong>Localização:</strong> São Paulo, Brasil</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Meu Portfólio</h2>
+        <p>Veja alguns dos meus projetos</p>
+      </div>
+      <div class="portfolio-items">
+        <!-- Exemplo de um projeto -->
+        <div class="portfolio-item">
+          <img src="MicrosoftTeams-image-2.png" alt="Imagem do Projeto 1">
+          <h3>Projeto 1</h3>
+          <p>Descrição do projeto.</p>
+        </div>
+        <!-- Exemplo de outro projeto -->
+        <div class="portfolio-item">
+          <img src="images.jpg" alt="Imagem do Projeto 2">
+          <h3>Projeto 2</h3>
+          <p>Descrição do projeto.</p>
+        </div>
+        <!-- Adicione mais projetos aqui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo</p>
+      </div>
+      <div class="info-wrap">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <h3>Email:</h3>
+          <p>laureanesilva188@gmai.com</p>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-instagram"></i>
+          <h3>Instagram:</h3>
+          <p>@7lahxz</p>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp:</h3>
+          <p>+55 11 96294-2775</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Laureane da Silva Oliveira. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script>
+  const scrollTop = document.querySelector('.scroll-top');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 300) scrollTop.classList.add('active');
+    else scrollTop.classList.remove('active');
+  });
+
+  const header = document.querySelector('.header');
+  const toggleBtn = document.querySelector('.header-toggle');
+  toggleBtn.addEventListener('click', () => {
+    header.classList.toggle('header-show');
+  });
+</script>
 </body>
 </html>
